@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".match.CreateMatch_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Match"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shap_back"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/white"
+                android:hint="Date"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/white"
+                android:hint="Time"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/referencenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:hint="5 Digit Reference Id"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/matchCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:hint="Match Charge"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/maxParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:hint="Max Participants Set"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pricepool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:hint="1st And 2nd Position Price Pool"
+                app:boxBackgroundMode="outline"
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:boxStrokeColor="@color/teal_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/white"
+                    android:lines="2"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/matchTime"
+                android:spinnerMode="dropdown"
+                android:background="@android:drawable/btn_dropdown"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/matchCategories"
+                android:spinnerMode="dropdown"
+                android:background="@android:drawable/btn_dropdown"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/matchImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/profile" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/chooseImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CHOOSE IMAGE"
+                android:textColor="@color/white"
+                android:background="@drawable/shap_button"
+                android:layout_marginTop="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="UPLOAD"
+                android:background="@drawable/shap_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

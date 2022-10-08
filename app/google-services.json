@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "169049403272",
+    "project_id": "bgmi-4e045",
+    "storage_bucket": "bgmi-4e045.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169049403272:android:65a6d5311fe1a2d505143d",
+        "android_client_info": {
+          "package_name": "com.krish.bgmiadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169049403272-r26aqcr400stc1slg6ko5eh0r8ose88n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0wDSomF97ZzJfCn0iV2bcvymFkv9EP1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169049403272-r26aqcr400stc1slg6ko5eh0r8ose88n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
